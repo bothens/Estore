@@ -1,4 +1,5 @@
 ﻿namespace Application_Layer.Common.Results
+
 {
     public class OperationResult
     {
@@ -8,13 +9,15 @@
 
         public object? Data { get; set; }
 
-        public static OperationResult Success(string message)
+
+        public static OperationResult Success(string message) 
         {
             return new OperationResult
             {
                 Message = message,
                 IsSuccess = true,
                 Data = null
+                
             };
         }
 
