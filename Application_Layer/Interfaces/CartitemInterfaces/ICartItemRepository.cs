@@ -9,5 +9,10 @@ namespace Application_Layer.Interfaces.CartItemInterfaces
         Task<CartItem?> GetCartItemByIdAsync(int id);
         Task UpdateCartItemAsync(CartItem cartItem);
         Task<bool> DeleteCartItemAsync(int id);
+        Task<bool> DeleteAsync(int id);
+        Task UpdateAsync(CartItem toUpdate);
+        Task GetByIdAsync(int id);
+        Task GetAllAsync();
+        Task CreateAsync(CartItem entity);
     }
 }
